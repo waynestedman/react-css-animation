@@ -84,3 +84,11 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
