@@ -1,0 +1,35 @@
+/* global app styles */
+
+@keyframes headerAnimation {
+  from {
+    opacity: 0;
+    background-color: #444;
+  }
+  to {
+    opacity: 1;
+    background-color: var(--header-bg-color);
+  }
+}
+
+@keyframes headerText {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+header {
+  background-color: var(--header-bg-color);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  animation: headerAnimation 1.5s ease-in-out;
+
+  h3 {
+    animation: headerText 1s ease-in-out;
+  }
+}
+

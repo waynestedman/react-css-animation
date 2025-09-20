@@ -1,5 +1,5 @@
 /* index.css */
-@import "stuff.css";
+@import "app.css";
 
 /* variables, resets and defaults */
 :root {
@@ -85,10 +85,10 @@ p {
   font-size: 1em;
 }
 
-main {
+/* main {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
-}
+} */

@@ -1,35 +1,39 @@
-/* stuff */
+/* stuff styles */
 
-@keyframes headerAnimation {
-  from {
-    opacity: 0;
-    background-color: #444;
-  }
-  to {
-    opacity: 1;
-    background-color: var(--header-bg-color);
-  }
+.moving-stuff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #002839;
+  border-radius: 10px;
+  background-color: #00405c;
+  gap: 1rem;
+  padding-block: 2rem;
 }
 
-@keyframes headerText {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #8b91f4;
+
+  &::after {
+    content: 'ring';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #005d57;
+    background-color: rgba(0, 92, 86, 0.2);
+    border: 2px solid #2c2e4f;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    text-align: center;
   }
 }
-
-header {
-  background-color: var(--header-bg-color);
-  text-align: center;
-  box-shadow: var(--box-shadow);
-  animation: headerAnimation 1.5s ease-in-out;
-
-  h3 {
-    animation: headerText 1s ease-in-out;
-  }
-}
-
